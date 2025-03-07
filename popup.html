@@ -2,13 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Timer Popup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Extension Popup</title>
+    <style>
+        #timer {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <div id="timer">Time remaining: 30 seconds</div>
+    <h1>AutoClicker</h1>
+    <h1 class="hiddenline">----</h1>
+    <p>Will use the button.txt file to find qualifying buttons on a page and click them. When started it will wait 30 seconds then begin clicking them every 10 seconds.</p>
     <button id="start-stop">Start Timer</button>
-
-    <!-- Ensure this script tag is there -->
+    <div id="timer"></div>
     <script src="popup.js"></script>
 </body>
 </html>
